@@ -240,6 +240,32 @@
      
         </code></pre>
       </section>
+      <section class="card">
+        <h2>Status Codes Tell Me What Happened</h2>
+      
+        <p>
+          Today I learned that a status code tells me how an API request went.
+          A 200 status code means my request was successful, while a 400 can mean
+          something is missing or incorrect in my request.
+        </p>
+      
+        <pre><code>
+      200 OK
+      400 Bad Request
+      404 Not Found</code></pre>
+      </section>
+      
+      <section class="card">
+        <h2>API Keys Need to Stay Private</h2>
+      
+        <p>
+          I learned that an API key identifies my account when I send a request.
+          Instead of putting the key in the URL, I sent it through a header in Postman
+          and used a variable so the actual key did not have to appear in the request.
+        </p>
+      
+        <pre><code>X-Api-Key: {{api-key}}</code></pre>
+      </section>
     </main>
   </body>
 </html>
