@@ -297,6 +297,36 @@ describe(pets[0]);</code></pre>
 
 describe(pets[0]);</code></pre>
 </section>
+<section class="card">
+  <h2>console.log and return do different jobs</h2>
+
+  <p>
+    Today I learned that console.log shows a value in the console, but return sends a value back to the code that called the function.
+    A return value can be stored in a variable and used again later.
+  </p>
+
+  <pre><code>function describe(pet) {
+  return pet.name + " comes from " + pet.origin + ".";
+}
+
+let line = describe(pets[0]);</code></pre>
+</section>
+
+<section class="card">
+  <h2>Why undefined appeared</h2>
+
+  <p>
+    I learned that a function without a return statement gives back undefined.
+    Even if console.log prints the correct sentence, the program cannot store that sentence unless the function returns it.
+  </p>
+
+  <pre><code>function describe(pet) {
+  console.log(pet.name);
+}
+
+let line = describe(pets[0]);
+console.log(line); // undefined</code></pre>
+</section>
 </main>
   </body>
 </html>
