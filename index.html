@@ -266,6 +266,37 @@
       
         <pre><code>X-Api-Key: {{api-key}}</code></pre>
       </section>
-    </main>
+
+  <section class="card">
+  <h2>Parameters and Arguments</h2>
+
+  <p>
+    Today I learned that a parameter is a variable used by a function.
+    An argument is the actual value I give the function when I call it.
+  </p>
+
+  <pre><code>function describe(cat) {
+  console.log(cat.name);
+}
+
+describe(pets[0]);</code></pre>
+</section>
+
+<section class="card">
+  <h2>Reading One Cat Record</h2>
+
+  <p>
+    I learned that JavaScript can read individual properties from an object
+    using dot notation. This lets my function take one cat record and use
+    specific information such as its name and origin.
+  </p>
+
+  <pre><code>function describe(cat) {
+  console.log(cat.name + " is from " + cat.origin);
+}
+
+describe(pets[0]);</code></pre>
+</section>
+</main>
   </body>
 </html>
