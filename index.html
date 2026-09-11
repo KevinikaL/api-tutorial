@@ -327,6 +327,31 @@ let line = describe(pets[0]);</code></pre>
 let line = describe(pets[0]);
 console.log(line); // undefined</code></pre>
 </section>
+<section class="card">
+  <h2>forEach and map Do Different Jobs</h2>
+
+  <p>
+    Today I learned that forEach runs a callback once for every item in an array.
+    I also learned that map collects the return value from each callback and creates a new array.
+  </p>
+
+  <pre><code>pets.forEach(summarize);
+
+let lines = pets.map(summarize);</code></pre>
+</section>
+
+<section class="card">
+  <h2>Building a Report from Every Record</h2>
+
+  <p>
+    I used map to turn every cat record into a sentence.
+    Then I used join with a newline so each sentence appeared on its own line in the final report.
+  </p>
+
+  <pre><code>let lines = pets.map(summarize);
+let report = lines.join("\n");
+console.log(report);</code></pre>
+</section>
 </main>
   </body>
 </html>
